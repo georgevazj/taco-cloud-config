@@ -15,7 +15,7 @@ spec:
     kind: Service
     name: taco-cloud
     weight: 100
-  tls:
-    termination: passthrough
-    insecureEdgeTerminationPolicy: Redirect
+  # tls:
+  #   termination: passthrough
+  #   insecureEdgeTerminationPolicy: Redirect
   wildcardPolicy: None
