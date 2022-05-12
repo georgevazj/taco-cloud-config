@@ -10,12 +10,12 @@ metadata:
   namespace: taco-cloud
 spec:
   port:
-    targetPort: http
+    targetPort: 8080
   to:
     kind: Service
     name: taco-cloud
     weight: 100
-  # tls:
-  #   termination: passthrough
-  #   insecureEdgeTerminationPolicy: Redirect
+  tls:
+    termination: passthrough
+    insecureEdgeTerminationPolicy: None
   wildcardPolicy: None
