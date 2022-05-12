@@ -10,7 +10,7 @@ metadata:
   namespace: taco-cloud
 spec:
   port:
-    targetPort: https
+    targetPort: http
   to:
     kind: Service
     name: taco-cloud
